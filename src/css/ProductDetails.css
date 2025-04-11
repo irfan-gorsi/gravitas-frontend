@@ -1,0 +1,158 @@
+.product-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+
+  .product-info {
+    margin-top: 40px;
+
+    padding-left: 30px;
+  }
+  
+  .detail-product-title {
+    font-weight: bold;
+    font-size: 28px;
+    align-items: start;
+  }
+  
+  .product-price {
+    color: green;
+    font-size: 24px;
+  }
+  
+  .size-options,
+  .color-options {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+  }
+  
+  .size-button{
+    border: 2px solid black;
+    padding: 8px 14px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    width: 50px;
+
+  }
+  .color-button {
+    border: 2px solid black;
+    padding: 8px 14px;
+    border-radius: 30px;
+    background: white;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .size-button:hover,
+  .color-button:hover {
+    background: black;
+    color: white;
+    border: none;
+  }
+  
+  .selected {
+    background: black;
+    color: white;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .Add-to-cart-button {
+    width: 90%;
+    padding: 12px;
+    background: white;
+    color: black;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: 1px solid black;
+
+  }
+  
+  .Add-to-cart-button:hover {
+    background: black;
+    border: 1px solid black;
+  }
+  .Add-to-cart-button:active{
+    background-color: red;
+
+  } 
+  /* Cart Icon Positioned on Top Right */
+.top-cart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+/* Cart Icon Link */
+.cart-icon-link {
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+
+.cart-icon-link i {
+  font-size: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.cart-icon-link:hover i {
+  color: #007bff;
+}
+
+.cart-icon-badge {
+  position: absolute;
+  top: -5px;
+  right: -10px;
+  background: red;
+  color: white;
+  width: 20px;  /* Ensures a round shape */
+  height: 20px; /* Ensures a round shape */
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;  /* Makes it perfectly round */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+/* swiper */
+/* Limit Swiper Width */
+.custom-swiper {
+  max-width: 500px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;/* Adjust height based on your design */
+}
+
+/* Make Images Responsive */
+.custom-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure image fits inside */
+}
+
+/* Centering Swiper */
+.d-flex.flex-column.align-items-center {
+  justify-content: center;
+}

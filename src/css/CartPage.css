@@ -1,0 +1,213 @@
+/* Cart Page Styles */
+.cart-container {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.cart-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.table {
+  border-radius: 8px;
+  width: 100%;
+  table-layout: auto; /* Allow the table to shrink */
+  overflow-x: auto;
+  word-wrap: break-word;
+  table-layout: fixed; /* Ensure the table columns don't exceed available space */
+}
+
+.table thead {
+  background: #007bff;
+  color: white;
+}
+
+.table th,
+.table td {
+  text-align: center;
+  vertical-align: middle;
+  word-wrap: break-word;
+  padding: 8px;
+  white-space: normal; /* Allow words to wrap if necessary */
+  overflow: hidden; /* Prevents horizontal overflow */
+  font-size: 20px;
+}
+
+.table td img {
+  max-width: 70px; /* Reduce the size of images to fit better */
+  object-fit: cover;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #fff;
+  max-height: 70px; /* Limit image height for better responsiveness */
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity-controls button {
+  border-radius: 5px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ddd;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.quantity-controls button:hover {
+  background-color: #e9ecef;
+}
+
+.quantity-controls span {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 10px;
+}
+
+/* Total Price Section */
+.total-price {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.total-price h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-container {
+    padding: 15px;
+  }
+
+  /* Table font size and padding adjustments */
+  .table td,
+  .table th {
+    font-size: 20px;
+    padding: 6px;
+  }
+
+  /* Ensure images shrink properly */
+  .table td img {
+    max-width: 40px; /* Adjust image size */
+  }
+
+  /* Quantity button adjustments */
+  .quantity-controls button {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
+
+  /* Total price font size adjustment */
+  .total-price h4 {
+    font-size: 18px;
+  }
+
+  /* Buttons adjustments */
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 10px;
+  }
+
+  /* Table adjustments for smaller screens */
+  .table td,
+  .table th {
+    font-size: 19px;
+    padding: 6px;
+  }
+
+  /* Quantity control buttons adjustments */
+  .quantity-controls button {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+  .quantity-controls span {
+    font-size: 10px;
+
+  }
+
+  /* Total price section font size */
+  .total-price h4 {
+    font-size: 16px;
+  }
+.remove-btn{
+  font-size: 10px;
+  
+}
+  /* Buttons adjustments */
+  button {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .cart-container {
+    padding: 10px;
+  }
+
+  /* Table adjustments for smaller screens */
+  .table td,
+  .table th {
+    font-size: 30px;
+    padding: 6px;
+  }
+
+  /* Quantity control buttons adjustments */
+  .quantity-controls button {
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+  }
+  .quantity-controls span {
+    font-size: 10px;
+
+  }
+
+  /* Total price section font size */
+  .total-price h4 {
+    font-size: 16px;
+  }
+.remove-btn{
+  font-size: 10px;
+  
+}
+  /* Buttons adjustments */
+  button {
+    font-size: 14px;
+  }
+
+}

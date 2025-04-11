@@ -1,0 +1,122 @@
+/* Remove underline only for product card links */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+/* Product card container */
+.product-card-container {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Hover effect for the entire card */
+.product-card-container:hover {
+  transform: translateY(-6px);
+
+}
+
+/* Product card styling */
+.product-card {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+  height: 380px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  width: auto;
+
+}
+
+/* Hover effect adds shadow */
+.product-card-container:hover .product-card {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.product-card-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  padding: 0;  
+  transition: transform 0.4s ease;
+}
+
+
+
+/* Subtle zoom effect on hover */
+.product-card-container:hover .product-card-img {
+  transform: scale(1.05);
+}
+
+/* Product info below the card */
+.product-info {
+  text-align: left;
+  padding: 8px 4px;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  color: #333;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: 3rem;
+}
+
+/* Change text color on hover */
+.product-card-container:hover .product-name {
+  color: #000;
+}
+.product-card-container:hover .card-product-price {
+  color: #000;
+}
+
+.card-product-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  display: block;
+}
+
+/* For responsive design */
+@media (max-width: 992px) {
+  .product-card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    height: 180px;
+  }
+  
+  .product-name {
+    font-size: 0.8rem;
+  }
+  
+  .product-price {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    height: 180px;
+  }
+  
+  /* .product-card-img {
+  } */
+}

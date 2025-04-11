@@ -1,0 +1,38 @@
+/* Checkout Container */
+.checkout-container {
+  max-width: 100%; /* Allow full width on smaller screens */
+  margin: auto;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box; /* Ensure padding does not overflow */
+}
+
+/* Checkout Form */
+.checkoutform {
+  width: 35rem; /* Default width for larger screens */
+  max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+  margin: 0 auto; /* Center the form */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-container {
+    padding-left: 20px; /* Less padding on smaller screens */
+  }
+
+  .checkoutform {
+    width: 100%; /* Make the form full width on smaller screens */
+    padding: 10px; /* Add some padding for better spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-container {
+    padding-left: 10px; /* Even less padding on very small screens */
+  }
+
+  .checkoutform {
+    width: 100%; /* Ensure the form takes the full width */
+    padding: 10px; /* Add some padding */
+  }
+}
